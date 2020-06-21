@@ -1,0 +1,9 @@
+server:
+  port: 8765
+spring:
+  application:
+    name: ms-gateway
+zuul:
+  routes:
+    ms-user: /api/user/**
+    ms-auth-server : /auth/**
